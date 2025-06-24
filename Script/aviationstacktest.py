@@ -1,9 +1,10 @@
 import requests
 import json
 
+AVIATIONSTACK_URL = "http://api.aviationstack.com/v1/"
+aviationstackapikey = '' # REPLACE WITH YOUR AVIATIONSTACK API KEY
+
 # UNCOMMENT TO GET FRESH DATA. SAVING TO FILE TO AVOID REPEATED REQUESTS THAT USE API QUOTA
-# AVIATIONSTACK_URL = "http://api.aviationstack.com/v1/"
-# aviationstackapikey = '' # Replace with your actual API key
 # response = requests.get(f"{AVIATIONSTACK_URL}flights?access_key={aviationstackapikey}&flight_status=active").json()
 # with open("aviationstack_flights.json", "w") as file:
 #     json.dump(response, file, indent=4)
